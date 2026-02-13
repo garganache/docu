@@ -32,9 +32,8 @@ For each application, we maintain **two types of documentation**:
 
 #### 🛠️ Technical/Developer Documentation
 **For developers, operators, DevOps**
-- 📦 **Installation** - Local dev setup ("run on my laptop")
 - ⚙️ **Configuration** - Settings, environment variables
-- 🚀 **Deployment** - Production deployment ("make it live")
+- 🚀 **Deployment** - Production deployment
 - 📚 **API Reference** - Endpoints, methods, examples
 - 🐛 **Debugging** - Developer troubleshooting, logs
 - 🔄 **Changelog** - Version history, breaking changes
@@ -71,7 +70,6 @@ docu/
 │   │   └── troubleshooting.md
 │   │
 │   └── technical/               # 🛠️ Technical docs
-│       ├── installation.md      # Local dev setup
 │       ├── configuration.md     # Settings
 │       ├── deployment.md        # Production deployment
 │       ├── api-reference.md     # API docs
@@ -89,7 +87,7 @@ docu/
 │   │   │   │   │   ├── features.md
 │   │   │   │   │   └── ...
 │   │   │   │   └── technical/        # 🛠️ Technical docs
-│   │   │   │       ├── installation.md
+│   │   │   │       ├── configuration.md
 │   │   │   │       ├── deployment.md
 │   │   │   │       └── ...
 │   │   │   ├── docusaurus.config.js

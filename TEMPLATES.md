@@ -19,25 +19,12 @@ We have **two main audiences**:
 **Audience:** Developers, operators, people BUILDING/DEPLOYING your app
 
 **Templates:**
-- `installation.md` - How to install for development/local use
 - `configuration.md` - Settings, environment variables
 - `deployment.md` - How to deploy to production
 - `api-reference.md` - API endpoints, methods
 - `debugging.md` - Developer troubleshooting, logs
 
-## Installation vs Deployment
-
-### Installation 📦
-**For:** Developers, QA, local testing  
-**Goal:** Get the app running on your machine  
-**Examples:**
-- "Install Node.js and npm"
-- "Clone the repo"
-- "Run `npm install`"
-- "Run `npm start`"
-- "Open http://localhost:3000"
-
-**Use case:** "I'm a developer, I want to run this locally to develop/test"
+## Deployment
 
 ### Deployment 🚀
 **For:** DevOps, SREs, production operations  
@@ -50,6 +37,8 @@ We have **two main audiences**:
 - "Configure auto-scaling"
 
 **Use case:** "I need to put this in production for real users"
+
+**Note:** There is no separate "installation" document - deployment covers getting the app running.
 
 ## Docusaurus Structure
 
@@ -71,7 +60,6 @@ docs/
     │   │   │   └── troubleshooting.md
     │   │   │
     │   │   └── technical/           # 🛠️ TECHNICAL
-    │   │       ├── installation.md
     │   │       ├── configuration.md
     │   │       ├── deployment.md
     │   │       ├── api-reference.md
@@ -109,7 +97,6 @@ docu/
 │   │   └── troubleshooting.md
 │   │
 │   └── technical/                   # 🛠️ Technical documentation
-│       ├── installation.md          # Local dev setup
 │       ├── configuration.md         # Settings, env vars
 │       ├── deployment.md            # Production deployment
 │       ├── api-reference.md         # API docs
@@ -181,36 +168,6 @@ docu/
 
 ### Technical Templates
 
-#### installation.md
-**Purpose:** Get it running locally  
-**Content:**
-- System requirements
-- Dependencies
-- Installation steps
-- Verification
-- Next steps (→ configuration)
-
-**Example:**
-```markdown
-# Installation - App A v1.0
-
-## Prerequisites
-- Node.js 18+
-- npm or yarn
-
-## Steps
-1. Clone: `git clone ...`
-2. Install: `npm install`
-3. Run: `npm start`
-
-## Verification
-Open http://localhost:3000 - you should see...
-
-## Next Steps
-- [Configuration](configuration.md)
-- [User Guide](../user-guide/getting-started.md)
-```
-
 #### deployment.md
 **Purpose:** Deploy to production  
 **Content:**
@@ -273,7 +230,6 @@ module.exports = {
       type: 'category',
       label: '🛠️ Technical',
       items: [
-        'technical/installation',
         'technical/configuration',
         'technical/deployment',
         'technical/api-reference',
@@ -295,14 +251,9 @@ module.exports = {
 - Troubleshooting
 
 **Technical (🛠️):**
-- **Installation** = Local dev setup ("run on my laptop")
 - **Configuration** = Settings, env vars
 - **Deployment** = Production deployment ("make it live")
 - API Reference
 - Debugging
-
-**Key Difference:**
-- **Installation** → "How do I run this to develop/test?"
-- **Deployment** → "How do I put this in production?"
 
 Does this structure work for you?
