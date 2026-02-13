@@ -19,13 +19,24 @@
 
 ### Documentation Types (Standard Structure)
 
-For each application, we maintain:
+For each application, we maintain **two types of documentation**:
 
-- 📘 **Installation Guide** - Setup, dependencies, first run
-- 🔧 **Configuration** - Settings, environment variables, options
-- 🐛 **Debugging Guide** - Common issues, troubleshooting, logs
+#### 👥 User-Facing Documentation
+**For end users, customers**
+- 🚀 **Getting Started** - First steps, quick start
+- 📖 **User Guide** - How to use features
+- 🎓 **Tutorials** - Step-by-step walkthroughs
+- ❓ **FAQ** - Common questions
+- 💡 **Concepts** - Understanding key ideas
+- 🔧 **Troubleshooting** - User-level problems
+
+#### 🛠️ Technical/Developer Documentation
+**For developers, operators, DevOps**
+- 📦 **Installation** - Local dev setup ("run on my laptop")
+- ⚙️ **Configuration** - Settings, environment variables
+- 🚀 **Deployment** - Production deployment ("make it live")
 - 📚 **API Reference** - Endpoints, methods, examples
-- 🚀 **Deployment** - Production setup, scaling, monitoring
+- 🐛 **Debugging** - Developer troubleshooting, logs
 - 🔄 **Changelog** - Version history, breaking changes
 
 ## Repository Structure
@@ -45,22 +56,45 @@ docu/
 │   └── progress.md              # Work log
 │
 ├── templates/                   # Reusable doc templates
-│   ├── installation.md
-│   ├── configuration.md
-│   ├── debugging.md
-│   ├── api-reference.md
-│   └── deployment.md
+│   ├── docusaurus/              # Docusaurus scaffolding
+│   │   ├── docusaurus.config.js.template
+│   │   ├── sidebars.js.template
+│   │   └── package.json.template
+│   │
+│   ├── user-facing/             # 👥 User documentation
+│   │   ├── getting-started.md
+│   │   ├── user-guide.md
+│   │   ├── features.md
+│   │   ├── tutorials.md
+│   │   ├── faq.md
+│   │   ├── concepts.md
+│   │   └── troubleshooting.md
+│   │
+│   └── technical/               # 🛠️ Technical docs
+│       ├── installation.md      # Local dev setup
+│       ├── configuration.md     # Settings
+│       ├── deployment.md        # Production deployment
+│       ├── api-reference.md     # API docs
+│       └── debugging.md         # Dev troubleshooting
 │
-├── docs/                        # Documentation root
+├── docs/                        # Documentation root (Docusaurus)
 │   ├── app-a/                   # App A documentation
 │   │   ├── README.md            # Version index
 │   │   ├── CHANGELOG.md         # Cross-version changelog
 │   │   ├── v1.0/                # Version 1.0 docs
-│   │   │   ├── installation.md
-│   │   │   ├── configuration.md
-│   │   │   ├── debugging.md
-│   │   │   ├── api-reference.md
-│   │   │   └── deployment.md
+│   │   │   ├── docs/            # Docusaurus docs folder
+│   │   │   │   ├── intro.md
+│   │   │   │   ├── user-guide/       # 👥 User docs
+│   │   │   │   │   ├── getting-started.md
+│   │   │   │   │   ├── features.md
+│   │   │   │   │   └── ...
+│   │   │   │   └── technical/        # 🛠️ Technical docs
+│   │   │   │       ├── installation.md
+│   │   │   │       ├── deployment.md
+│   │   │   │       └── ...
+│   │   │   ├── docusaurus.config.js
+│   │   │   ├── sidebars.js
+│   │   │   └── package.json
 │   │   ├── v2.0/                # Version 2.0 docs
 │   │   │   └── (same structure)
 │   │   └── latest -> v2.0       # Symlink to latest
@@ -126,8 +160,16 @@ Add to each app's main README:
 
 See `.tracker/prd.json` for full project plan.
 
+## Technology Stack
+
+- **Docusaurus** - Documentation site generator
+- **Markdown** - Documentation format
+- **Git** - Version control
+- **GitHub** - Repository hosting
+
 ## Quick Links
 
+- **[TEMPLATES.md](TEMPLATES.md)** - Template guide (user-facing vs technical)
 - **[STRUCTURE.md](STRUCTURE.md)** - Detailed structure explanation
 - **[VERSIONING.md](VERSIONING.md)** - How to handle multiple versions
 - **[QUICKSTART.md](QUICKSTART.md)** - Getting started guide
