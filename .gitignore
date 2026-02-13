@@ -1,0 +1,46 @@
+.terraform/
+*.tfstate
+*.tfstate.backup
+.crash.log
+.terraform.tfstate*
+infra/terraform/**/terraform.tfvars
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+frontend/test-results/
+frontend/playwright-report/
+test-run.log
+
+# Environment files
+.env
+*.env.local
+
+# Test artifacts
+frontend/playwright-report*/
+frontend/test-results/
+*.log
+
+# Temporary files
+cleanup-list.txt
+
+# Test files in root
+/test_*.py
+/debug_*.py
+/create_test_*.py
+
+# Backend test files
+backend/test_*.py
+backend/init_db.py
+
+# SQLite databases
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
