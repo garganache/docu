@@ -1,7 +1,8 @@
 {
-  "name": "app-a-docs",
+  "name": "multi-app-docs",
   "version": "1.0.0",
   "private": true,
+  "description": "Unified documentation for multiple applications",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

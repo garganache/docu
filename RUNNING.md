@@ -2,10 +2,10 @@
 
 ## Quick Start - See It Working!
 
-### Option 1: App A v1.0 (Ready to Run)
+**ONE Docusaurus site showing ALL apps and ALL versions!**
 
 ```bash
-cd /home/ubuntu/.openclaw/workspace/docu/docs/app-a/v1.0
+cd /home/ubuntu/.openclaw/workspace/docu
 
 # Install dependencies
 npm install
@@ -16,15 +16,18 @@ npm start
 
 **Open:** http://localhost:3000
 
-You'll see a working Docusaurus site with:
-- 👥 User Guide (Getting Started, Features, FAQ)
-- 🛠️ Technical Docs (Configuration, Deployment, API Reference)
+You'll see:
+- 📚 Main landing page
+- 📱 All apps (App A, App B, App C)
+- 🏷️ All versions (v1.0, v2.0, etc.)
+- 👥 User Guide sections
+- 🛠️ Technical sections
 
-### Option 2: Clone from GitHub
+### Clone from GitHub
 
 ```bash
 git clone https://github.com/garganache/docu.git
-cd docu/docs/app-a/v1.0
+cd docu
 npm install
 npm start
 ```
@@ -32,23 +35,29 @@ npm start
 ## What's Included (Minimal Working Example)
 
 ```
-docs/app-a/v1.0/
-├── package.json             ✅ Docusaurus dependencies
-├── docusaurus.config.js     ✅ Site configuration
-├── sidebars.js             ✅ Navigation structure
+docu/                        # ROOT - One Docusaurus site
+├── package.json             ✅ Dependencies
+├── docusaurus.config.js     ✅ Site config
+├── sidebars.js             ✅ Navigation (all apps)
 │
-├── docs/                    ✅ Documentation content
-│   ├── intro.md            ✅ Homepage
+├── docs/                    ✅ All documentation
+│   ├── intro.md            ✅ Main homepage
+│   ├── versions.md         ✅ Version index
 │   │
-│   ├── user-guide/         ✅ User-facing docs
-│   │   ├── getting-started.md
-│   │   ├── features.md
-│   │   └── faq.md
+│   ├── app-a/              # App A
+│   │   ├── intro.md        #   App A overview
+│   │   └── v1.0/           #   Version 1.0
+│   │       ├── intro.md
+│   │       ├── user-guide/
+│   │       └── technical/
 │   │
-│   └── technical/          ✅ Technical docs
-│       ├── configuration.md
-│       ├── deployment.md
-│       └── api-reference.md
+│   ├── app-b/              # App B
+│   │   ├── intro.md
+│   │   └── v1.0/
+│   │
+│   └── app-c/              # App C
+│       ├── intro.md
+│       └── v1.0/
 │
 └── src/css/                ✅ Custom styling
     └── custom.css
@@ -57,7 +66,7 @@ docs/app-a/v1.0/
 ## Build for Production
 
 ```bash
-cd docs/app-a/v1.0
+cd docu
 
 # Build static site
 npm run build
@@ -66,43 +75,34 @@ npm run build
 npm run serve
 ```
 
-Output will be in `build/` directory - ready to deploy!
+Output will be in `build/` directory - ready to deploy to any static host!
 
 ## Next Steps
-
-### Add More Apps
-
-Copy the structure:
-
-```bash
-cp -r docs/app-a/v1.0 docs/app-b/v1.0
-cd docs/app-b/v1.0
-
-# Update package.json name
-# Update docusaurus.config.js title
-# Update docs content
-
-npm install
-npm start
-```
 
 ### Add More Versions
 
 ```bash
+# Create v2.0 for App A
 cp -r docs/app-a/v1.0 docs/app-a/v2.0
-cd docs/app-a/v2.0
 
-# Update version-specific content
-npm install
-npm start
+# Update content in docs/app-a/v2.0/
+
+# Update sidebars.js to include v2.0
 ```
 
-### Create Symlink to Latest
+### Add New Apps
 
 ```bash
-cd docs/app-a
-ln -s v1.0 latest
+# Create App D
+mkdir -p docs/app-d/v1.0/{user-guide,technical}
+
+# Add pages
+# Update sidebars.js to include app-d
 ```
+
+### Customize
+
+All changes happen in **one place** - the root `docu/` directory!
 
 ## Troubleshooting
 
