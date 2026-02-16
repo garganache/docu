@@ -27,6 +27,14 @@ frontend/playwright-report*/
 frontend/test-results/
 *.log
 
+# Docusaurus
+node_modules/
+.docusaurus/
+build/
+
+# IDE
+.idea/
+
 # Temporary files
 cleanup-list.txt
 

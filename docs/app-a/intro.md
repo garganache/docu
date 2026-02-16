@@ -2,49 +2,34 @@
 sidebar_position: 1
 ---
 
-# App A Overview
+# Yields for Performance
 
-**Project Management & Collaboration Platform**
+**Scalable Data Science Platform for Model Risk Management**
 
-App A is a comprehensive project management solution for teams of all sizes.
+Yields for Performance is Yield's scalable data science platform for Model Risk Management (MRM). It distinguishes itself from other data science environments because it has been designed with the main purpose of standardizing model risk management.
 
-## 📋 What is App A?
+## Key Capabilities
 
-App A helps teams:
-- Plan and track projects
-- Collaborate in real-time
-- Manage tasks and workflows
-- Monitor progress and metrics
+- **Reproducibility**: ensuring that historically obtained results can be reproduced at all times.
+- **Auditability**: creating and maintaining the relevant metadata on all the algorithm's related objects (i.e. input, output, the algorithm itself and their mutual relations, i.e. lineage)
+- **Standardization**: enabling efficient use of code by means of having 'specification templates'.
+- **Sharing** data and computations to enable efficient interactions between teams.
 
-## 🏷️ Available Versions
+## Available Versions
 
-- **[v1.0](v1.0/intro)** (Latest, Stable) - Current production release
+- **[v2.13](v1.0/intro)** (Latest, Stable) - Current production release
 
-## 🚀 Quick Links
+## Quick Links
 
 ### For Users
 - [Getting Started](v1.0/user-guide/getting-started)
-- [Features Overview](v1.0/user-guide/features)
-- [FAQ](v1.0/user-guide/faq)
+- [Glossary](v1.0/concepts/glossary)
+- [Workflow](v1.0/concepts/workflow)
 
 ### For Developers
-- [Configuration](v1.0/technical/configuration)
-- [Deployment](v1.0/technical/deployment)
-- [API Reference](v1.0/technical/api-reference)
-
-## 📊 Key Features
-
-- ✅ Project and task management
-- ✅ Real-time collaboration
-- ✅ File sharing and storage
-- ✅ Team communication
-- ✅ Reporting and analytics
-
-## 🔗 Related Resources
-
-- [Official Website](https://app-a.example.com)
-- [GitHub Repository](https://github.com/your-org/app-a)
-- [Status Page](https://status.app-a.example.com)
+- [Python Library Modules](v1.0/technical/python-library-modules)
+- [Python I/O Operations](v1.0/technical/python-io-operations)
+- [Admin Guide](v1.0/technical/admin-guide)
 
 ---
 

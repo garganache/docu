@@ -1,5 +1,5 @@
-# App-a v1.0
+# Yields for Performance v2.13
 
-Documentation for App-a version 1.0.
+Documentation for Yields for Performance version 2.13.
 
 Browse the sections in the sidebar →

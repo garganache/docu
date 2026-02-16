@@ -46,6 +46,7 @@ const config = {
         logo: {
           alt: 'Docs Logo',
           src: 'img/logo.svg',
+          href: '/docs/',
         },
         items: [
           {
@@ -60,7 +61,7 @@ const config = {
             position: 'left',
             items: [
               {
-                label: 'App A',
+                label: 'Yields for Performance',
                 to: '/docs/app-a/intro',
               }
             ],
@@ -79,7 +80,7 @@ const config = {
             title: 'Applications',
             items: [
               {
-                label: 'App A',
+                label: 'Yields for Performance',
                 to: '/docs/app-a/intro',
               }
             ],
@@ -89,7 +90,7 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/intro',
+                to: '/docs/',
               },
               {
                 label: 'Version Index',

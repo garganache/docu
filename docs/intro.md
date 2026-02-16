@@ -13,7 +13,7 @@ This documentation site covers multiple applications, each with multiple version
 
 ### 📱 Applications
 
-- **[App A](app-a/intro)** - Project management and collaboration platform
+- **[Yields for Performance](app-a/intro)** - Scalable data science platform for Model Risk Management
 
 
 ### 🏷️ Versions
@@ -26,31 +26,14 @@ Choose your application:
 
 <div style={{display: 'flex', gap: '20px', marginTop: '30px'}}>
   <div style={{flex: 1, padding: '20px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '8px'}}>
-    <h3>📱 App A</h3>
-    <p>Project management platform</p>
+    <h3>📱 Yields for Performance</h3>
+    <p>Model Risk Management platform</p>
     <ul>
       <li><a href="/docs/app-a/v1.0/user-guide/getting-started">Getting Started</a></li>
       <li><a href="/docs/app-a/v1.0/technical/deployment">Deploy</a></li>
     </ul>
   </div>
   
-  <div style={{flex: 1, padding: '20px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '8px'}}>
-    <h3>📱 App B</h3>
-    <p>Analytics and reporting</p>
-    <ul>
-      <li><a href="/docs/app-b/v1.0/user-guide/getting-started">Getting Started</a></li>
-      <li><a href="/docs/app-b/v1.0/technical/deployment">Deploy</a></li>
-    </ul>
-  </div>
-  
-  <div style={{flex: 1, padding: '20px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '8px'}}>
-    <h3>📱 App C</h3>
-    <p>Customer engagement</p>
-    <ul>
-      <li><a href="/docs/app-c/v1.0/user-guide/getting-started">Getting Started</a></li>
-      <li><a href="/docs/app-c/v1.0/technical/deployment">Deploy</a></li>
-    </ul>
-  </div>
 </div>
 
 ## 📖 Documentation Types
