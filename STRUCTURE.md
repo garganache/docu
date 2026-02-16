@@ -52,20 +52,7 @@ docu/
 │   │   ├── v2.0/                # Version 2.0 docs
 │   │   │   └── (same structure)
 │   │   └── latest -> v2.0       # Symlink to latest version
-│   │
-│   ├── app-b/                   # App B documentation
-│   │   ├── README.md
-│   │   ├── CHANGELOG.md
-│   │   ├── v3.0/
-│   │   ├── v3.1/
-│   │   └── latest -> v3.1
-│   │
-│   └── app-c/                   # App C documentation
-│       ├── README.md
-│       ├── CHANGELOG.md
-│       ├── v1.0/
-│       ├── v2.0/
-│       └── latest -> v2.0
+│   
 │
 ├── scripts/                     # 🤖 Automation
 │   ├── new-app.sh               #    Create docs for new app

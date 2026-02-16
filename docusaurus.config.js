@@ -62,15 +62,7 @@ const config = {
               {
                 label: 'App A',
                 to: '/docs/app-a/intro',
-              },
-              {
-                label: 'App B',
-                to: '/docs/app-b/intro',
-              },
-              {
-                label: 'App C',
-                to: '/docs/app-c/intro',
-              },
+              }
             ],
           },
           {
@@ -89,15 +81,7 @@ const config = {
               {
                 label: 'App A',
                 to: '/docs/app-a/intro',
-              },
-              {
-                label: 'App B',
-                to: '/docs/app-b/intro',
-              },
-              {
-                label: 'App C',
-                to: '/docs/app-c/intro',
-              },
+              }
             ],
           },
           {

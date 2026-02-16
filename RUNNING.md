@@ -50,14 +50,7 @@ docu/                        # ROOT - One Docusaurus site
 │   │       ├── intro.md
 │   │       ├── user-guide/
 │   │       └── technical/
-│   │
-│   ├── app-b/              # App B
-│   │   ├── intro.md
-│   │   └── v1.0/
-│   │
-│   └── app-c/              # App C
-│       ├── intro.md
-│       └── v1.0/
+│   
 │
 └── src/css/                ✅ Custom styling
     └── custom.css

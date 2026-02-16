@@ -38,47 +38,7 @@ const sidebars = {
           ],
         },
       ],
-    },
-    {
-      type: 'category',
-      label: '📱 App B',
-      collapsed: true,
-      items: [
-        'app-b/intro',
-        {
-          type: 'category',
-          label: 'v1.0 (Latest)',
-          link: {
-            type: 'doc',
-            id: 'app-b/v1.0/intro',
-          },
-          items: [
-            'app-b/v1.0/user-guide/getting-started',
-            'app-b/v1.0/technical/deployment',
-          ],
-        },
-      ],
-    },
-    {
-      type: 'category',
-      label: '📱 App C',
-      collapsed: true,
-      items: [
-        'app-c/intro',
-        {
-          type: 'category',
-          label: 'v1.0 (Latest)',
-          link: {
-            type: 'doc',
-            id: 'app-c/v1.0/intro',
-          },
-          items: [
-            'app-c/v1.0/user-guide/getting-started',
-            'app-c/v1.0/technical/deployment',
-          ],
-        },
-      ],
-    },
+    }
   ],
 };
 

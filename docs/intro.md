@@ -14,8 +14,7 @@ This documentation site covers multiple applications, each with multiple version
 ### 📱 Applications
 
 - **[App A](app-a/intro)** - Project management and collaboration platform
-- **[App B](app-b/intro)** - Analytics and reporting tool
-- **[App C](app-c/intro)** - Customer engagement platform
+
 
 ### 🏷️ Versions
 
