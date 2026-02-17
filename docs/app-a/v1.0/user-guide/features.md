@@ -104,7 +104,7 @@ The core backend. Orchestrates the platform, contains the domain model and rules
 
 | | |
 |---|---|
-| **Technology** | Scala 2.13, Akka HTTP |
+| **Technology** | Scala 2.13, Pekko HTTP |
 | **Interacts with** | Y-Portal, Keycloak, PostgreSQL, Jupyter Enterprise Gateway, file volumes |
 
 ### Registry-Auth Service
@@ -113,7 +113,7 @@ Manages user authorization. Synchronizes users and groups from Keycloak and allo
 
 | | |
 |---|---|
-| **Technology** | Scala 2.13, Akka HTTP |
+| **Technology** | Scala 2.13, Pekko HTTP |
 | **Interacts with** | Y-Portal, Keycloak, PostgreSQL |
 
 ### Secret Store (Vault)

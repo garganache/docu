@@ -133,14 +133,14 @@ You can also pass custom environment variables to the kernel through this Config
 
 Depending on file sizes and network speed, timeouts may occur during automation execution or file uploads. These can be adjusted at three levels:
 
-### Registry (Akka HTTP)
+### Registry (Pekko HTTP)
 
 In the Registry ConfigMap:
 
 ```
-akka.http.server.idle-timeout
-akka.http.client.idle-timeout
-akka.http.server.request-timeout
+pekko.http.server.idle-timeout
+pekko.http.client.idle-timeout
+pekko.http.server.request-timeout
 ```
 
 ### Y-Portal (Nginx)
