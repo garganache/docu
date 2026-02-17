@@ -410,14 +410,10 @@ View-only permissions across all object types:
 |-------|------|
 | ArtifactView | Artifact |
 | AnyAuditView | Audit |
-| DataView | Dataset |
 | GraphView | Graph |
 | InstanceView | Instance |
-| DataModelMappingConfigurationView | Mapping |
-| MappingView | Mapping |
-| ModelView | Model |
-| NotebookView | Notebook |
-| SessionReportReview | Session |
-| SessionViewLog | Session |
+| SessionDownloadNotebook | Session |
 | SessionViewHtmlCode | Session |
+| SessionViewLog | Session |
+| SessionViewHtml | Session |
 | SpecificationView | Specification |
