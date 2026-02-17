@@ -14,7 +14,7 @@ In Kubernetes deployments, JupyterHub uses the [KubeSpawner](https://jupyterhub-
 
 ### OpenShift
 
-Since version `0.0.762` of the application Helm charts, YfP is provided with custom security context constraints for running on OpenShift, available in `chiron/hack/openshift-scc.yaml`.
+YfP is provided with custom security context constraints for running on OpenShift, available in `chiron/hack/openshift-scc.yaml`.
 
 1. Fetch and untar the Helm charts:
 
@@ -399,18 +399,6 @@ helm upgrade chiron \
   --wait \
   --timeout=1800s \
   yields/chiron
-```
-
-### Upgrading from versions before 2.1.4
-
-If upgrading from a version earlier than 2.1.4, the Hadoop NameNode must start with the `--upgrade` parameter due to a Hadoop version upgrade:
-
-```shell
-kubectl edit sts chiron-hadoop-namenode
-# Replace the line:
-#   $HADOOP_HOME/bin/hdfs --config $HADOOP_CONF_DIR namenode $EXTRA_ARGS $@ &
-# With:
-#   $HADOOP_HOME/bin/hdfs --config $HADOOP_CONF_DIR namenode -upgrade $EXTRA_ARGS $@ &
 ```
 
 ### Post-Upgrade: Update Example Runtimes

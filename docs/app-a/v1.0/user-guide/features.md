@@ -118,7 +118,7 @@ Manages user authorization. Synchronizes users and groups from Keycloak and allo
 
 ### Secret Store (Vault)
 
-Stores credentials securely. Available from version 2.5.x.
+Stores credentials securely.
 
 | | |
 |---|---|
@@ -161,7 +161,7 @@ An alternative to classic YARN-based execution. Kernels are launched as Kubernet
 
 DaemonSet pods that pre-cache JupyterLab and kernel images on each node, ensuring fast kernel startup times.
 
-### Prometheus Monitoring (v2.13+)
+### Prometheus Monitoring
 
 Monitoring and observability for session execution. Reports errors in sessions when configured.
 

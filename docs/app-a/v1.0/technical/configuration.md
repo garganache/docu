@@ -200,8 +200,6 @@ To use self-signed certificates:
        secretName: chiron-tls-secret
    ```
 
-### For version 2.3.x and later
-
 Ensure the Keycloak deployment uses `KC_HOSTNAME` (not `KC_HOSTNAME_URL`) and add the following environment variable:
 
 ```yaml

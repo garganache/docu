@@ -10,7 +10,7 @@ For any information on the Python library, the user can do the following:
 %pip show yields-core
 
 Name: yields-core
-Version: 2.0.0a43
+Version: 2.13.0
 Summary: Yields Library.
 Home-page: https://github.com/yields-io/y-analysis-core
 Author: Edward Arghiroiu

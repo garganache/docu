@@ -4,7 +4,7 @@ Yields for Performance exposes a RESTful API for all platform operations. This p
 
 ## Interactive API Documentation
 
-Starting from version 2.12.0, an interactive API browser is available at:
+An interactive API browser is available at:
 
 ```
 https://<YOUR_HOST>/y-api/docs
@@ -76,7 +76,7 @@ For automated integrations, use:
 
 ## Pagination
 
-As of version 2.2.x, all listing endpoints use **mandatory pagination**. Without a `range` parameter, only the first 100 items are returned.
+All listing endpoints use **mandatory pagination**. Without a `range` parameter, only the first 100 items are returned.
 
 ### Generic Pagination Helper
 

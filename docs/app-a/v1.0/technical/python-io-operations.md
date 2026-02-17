@@ -274,67 +274,6 @@ some_parquet = artifact.file(artifact.files[0])
 df = some_parquet.dataframe(PersistenceFormat.PARQUET)
 ```
 
-## Appended read for migrated datasets
-
-During transition from 1.21.x to 2.0 the dataset object has been migrated to an artifact in which every dataset
-ingestion has been mapped onto an artifact version. Where before the user could read all dataset ingestions appended, we
-now leave it up to the user to actually read the data (we do provide some methods to provide a list of artifact versions
-though - see [Retrieving all previous artifact versions](#retrieving-all-previous-artifact-versions)). However, for the migrated datasets (that are persisted on HDFS), the following piece
-of code can be used to read the migrated datasets (now artifacts) appended:
-
-```python
-from urllib.parse import urlparse, urlunparse
-
-from yields.computation.spark import SparkOnYarn
-from yields.providers.spark import ProviderFactorySpark, PersistenceFormat
-
-# retrieve the artifact using alias determined in the ui
-artifact = session.io.input("given_alias_of_migrated_dataset", ProviderFactorySpark())
-
-# there are 2 mechanisms to read; one is using the spark api directly and another one is through the yields library
-def read_with_yields_library():
-        df = None
-        for version in artifact.previous_versions():
-            print(version)
-            version.matcher(ProviderFactorySpark())
-
-            for ingestion in version.files:
-                if df is not None:
-                   df = df.union(version.file(ingestion).dataframe(PersistenceFormat.PARQUET))
-                else:
-                   df = version.file(ingestion).dataframe(PersistenceFormat.PARQUET)
-
-        return df
-
-def read_with_spark_urls():
-    hostname = os.environ.get("HADOOP_NAMENODE_HOSTNAME", "namenode")
-    port = os.environ.get("HADOOP_NAMENODE_PORT", "8020")
-
-    def add_hostname_port(url, hostname, port):
-        parsed_url = urlparse(url)
-        new_netloc = f"{hostname}:{port}"
-        updated_url = urlunparse((
-            parsed_url.scheme,
-            new_netloc,
-            parsed_url.path,
-            parsed_url.params,
-            parsed_url.query,
-            parsed_url.fragment
-        ))
-
-        return updated_url
-
-    versions_url = []
-    for version in artifact.previous_versions():
-        print(version)
-        version.matcher(ProviderFactorySpark())
-
-        for ingestion in version.files:
-            versions_url.append(add_hostname_port(version.file(ingestion)._provider.url, hostname, port))
-
-    return SparkOnYarn().session.read.parquet(*versions_url)
-```
-
 ## Writing data (Spark is efficient for files bigger than 100 MB)
 
 While the reading of input artifacts does not depend on specific provider (with the exception of the Spark provider
