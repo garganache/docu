@@ -5,7 +5,7 @@ const sidebars = {
     'versions',
     {
       type: 'category',
-      label: '📱 Yields for Performance',
+      label: 'Yields for Performance',
       collapsed: false,
       items: [
         'app-a/intro',
@@ -19,7 +19,7 @@ const sidebars = {
           items: [
             {
               type: 'category',
-              label: '📖 Concepts',
+              label: 'Concepts',
               items: [
                 'app-a/v1.0/concepts/glossary',
                 'app-a/v1.0/concepts/workflow',
@@ -29,7 +29,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '👥 User Guide',
+              label: 'User Guide',
               items: [
                 'app-a/v1.0/user-guide/features',
                 'app-a/v1.0/user-guide/getting-started',
@@ -54,7 +54,7 @@ const sidebars = {
             },
             {
               type: 'category',
-              label: '🛠️ Technical',
+              label: 'Technical',
               items: [
                 'app-a/v1.0/technical/admin-guide',
                 'app-a/v1.0/technical/configuration',

@@ -73,12 +73,12 @@ After building:
 
 ```
 docu/
-├── templates/         ✅ Reusable doc templates
-├── docs/             ✅ Versioned app docs
+├── templates/         Reusable doc templates
+├── docs/             Versioned app docs
 │   ├── app-a/
 │   ├── app-b/
 │   └── app-c/
-└── scripts/          ✅ Automation tools
+└── scripts/          Automation tools
 ```
 
 ## Next Steps

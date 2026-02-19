@@ -4,7 +4,7 @@
 
 We have **two main audiences**:
 
-### 1. 👥 User-Facing Documentation
+### 1. User-Facing Documentation
 **Audience:** End users, customers, people USING your app
 
 **Templates:**
@@ -15,7 +15,7 @@ We have **two main audiences**:
 - `concepts.md` - Understanding key ideas
 - `troubleshooting.md` - User-level problems
 
-### 2. 🛠️ Technical/Developer Documentation  
+### 2. Technical/Developer Documentation
 **Audience:** Developers, operators, people BUILDING/DEPLOYING your app
 
 **Templates:**
@@ -26,7 +26,7 @@ We have **two main audiences**:
 
 ## Deployment
 
-### Deployment 🚀
+### Deployment
 **For:** DevOps, SREs, production operations  
 **Goal:** Deploy to production/staging servers  
 **Examples:**
@@ -52,14 +52,14 @@ docs/
     │   │   │
     │   │   ├── intro.md             # Landing page
     │   │   │
-    │   │   ├── user-guide/          # 👥 USER-FACING
+    │   │   ├── user-guide/          # USER-FACING
     │   │   │   ├── getting-started.md
     │   │   │   ├── features.md
     │   │   │   ├── tutorials.md
     │   │   │   ├── faq.md
     │   │   │   └── troubleshooting.md
     │   │   │
-    │   │   └── technical/           # 🛠️ TECHNICAL
+    │   │   └── technical/           # TECHNICAL
     │   │       ├── configuration.md
     │   │       ├── deployment.md
     │   │       ├── api-reference.md
@@ -87,7 +87,7 @@ docu/
 │   │   ├── sidebars.js.template
 │   │   └── package.json.template
 │   │
-│   ├── user-facing/                 # 👥 User documentation
+│   ├── user-facing/                 # User documentation
 │   │   ├── getting-started.md
 │   │   ├── user-guide.md
 │   │   ├── features.md
@@ -96,7 +96,7 @@ docu/
 │   │   ├── concepts.md
 │   │   └── troubleshooting.md
 │   │
-│   └── technical/                   # 🛠️ Technical documentation
+│   └── technical/                   # Technical documentation
 │       ├── configuration.md         # Settings, env vars
 │       ├── deployment.md            # Production deployment
 │       ├── api-reference.md         # API docs
@@ -217,7 +217,7 @@ module.exports = {
     'intro',
     {
       type: 'category',
-      label: '👥 User Guide',
+      label: 'User Guide',
       items: [
         'user-guide/getting-started',
         'user-guide/features',
@@ -228,7 +228,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: '🛠️ Technical',
+      label: 'Technical',
       items: [
         'technical/configuration',
         'technical/deployment',
@@ -242,7 +242,7 @@ module.exports = {
 
 ## Summary
 
-**User-Facing (👥):**
+**User-Facing:**
 - Getting Started
 - User Guide
 - Tutorials
@@ -250,7 +250,7 @@ module.exports = {
 - Concepts
 - Troubleshooting
 
-**Technical (🛠️):**
+**Technical:**
 - **Configuration** = Settings, env vars
 - **Deployment** = Production deployment ("make it live")
 - API Reference

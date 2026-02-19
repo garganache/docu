@@ -6,14 +6,14 @@ This repository manages documentation for **3 applications** using a **standardi
 
 ## The Problem You're Solving
 
-❌ **Before:**
+**Before:**
 - Each app has different documentation structure
 - Hard to find information
 - Inconsistent formatting
 - No version control
 - Documentation scattered everywhere
 
-✅ **After:**
+**After:**
 - **One repository** for all app docs
 - **Same structure** for every app
 - **Version controlled** with git
@@ -31,14 +31,14 @@ docu/
 ├── QUICKSTART.md                # Getting started
 ├── GENERAL.md                   # Agent instructions
 │
-├── templates/                   # 📄 Reusable documentation templates
+├── templates/                   # Reusable documentation templates
 │   ├── installation.md          #    Template for installation guide
 │   ├── configuration.md         #    Template for configuration
 │   ├── debugging.md             #    Template for debugging
 │   ├── api-reference.md         #    Template for API docs
 │   └── deployment.md            #    Template for deployment
 │
-├── docs/                        # 📚 Actual documentation
+├── docs/                        # Actual documentation
 │   │
 │   ├── app-a/                   # App A documentation
 │   │   ├── README.md            # Version index
@@ -54,13 +54,13 @@ docu/
 │   │   └── latest -> v2.0       # Symlink to latest version
 │   
 │
-├── scripts/                     # 🤖 Automation
+├── scripts/                     # Automation
 │   ├── new-app.sh               #    Create docs for new app
 │   ├── new-version.sh           #    Add new version for existing app
 │   ├── validate-structure.sh    #    Check all apps match structure
 │   └── generate-index.sh        #    Auto-generate index page
 │
-└── .tracker/                    # 📋 Project management
+└── .tracker/                    # Project management
     ├── prd.json                 #    Project definition
     ├── stories/                 #    User stories
     ├── tasks/                   #    Individual tasks
@@ -125,19 +125,19 @@ See [VERSIONING.md](VERSIONING.md) for complete details.
 
 ## Benefits
 
-✅ **Consistency** - Same structure everywhere  
-✅ **Maintainability** - Update template, all apps benefit  
-✅ **Discoverability** - Users know where to look  
-✅ **Version Control** - Full history, tags, branches  
-✅ **Collaboration** - PRs, reviews, CI checks  
-✅ **Automation** - Scripts validate, scaffold, generate  
+- **Consistency** - Same structure everywhere
+- **Maintainability** - Update template, all apps benefit
+- **Discoverability** - Users know where to look
+- **Version Control** - Full history, tags, branches
+- **Collaboration** - PRs, reviews, CI checks
+- **Automation** - Scripts validate, scaffold, generate  
 
 ## Next Steps
 
-1. ✅ Review this structure
-2. 📝 Create stories/tasks in `.tracker/`
-3. 🔨 Build templates
-4. 📚 Scaffold first app (App A)
-5. 🚀 Roll out to Apps B & C
+1. Review this structure
+2. Create stories/tasks in `.tracker/`
+3. Build templates
+4. Scaffold first app (App A)
+5. Roll out to Apps B & C
 
 See `.tracker/prd.json` for the full project plan!

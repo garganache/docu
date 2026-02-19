@@ -107,7 +107,7 @@ ruff check .           # Linting must pass (if configured)
 mypy .                 # Type checking must pass (if configured)
 ```
 
-#### 3. Test Verification ⚠️ **MANDATORY BEFORE GIT PUSH**
+#### 3. Test Verification - **MANDATORY BEFORE GIT PUSH**
 ```bash
 # Unit tests
 pytest                 # Backend - MUST PASS
@@ -124,7 +124,7 @@ npm run test:e2e       # MUST PASS before any git push
 # Fix issues and re-run until all tests pass
 ```
 
-**🚨 CRITICAL: NO CODE SHOULD BE PUSHED TO MAIN WITHOUT PASSING E2E TESTS**
+**CRITICAL: NO CODE SHOULD BE PUSHED TO MAIN WITHOUT PASSING E2E TESTS**
 
 #### 4. Update the Task File
 ```bash

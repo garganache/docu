@@ -161,9 +161,9 @@ git push --tags
 
 ## Benefits
 
-✅ **Multiple versions** of same app documented  
-✅ **Clear structure** - version folders  
-✅ **Easy to find** - `latest/` symlink  
-✅ **Version history** - CHANGELOG per app  
-✅ **Same structure** across all apps  
-✅ **Git versioned** - tags track releases
+- **Multiple versions** of same app documented
+- **Clear structure** - version folders
+- **Easy to find** - `latest/` symlink
+- **Version history** - CHANGELOG per app
+- **Same structure** across all apps
+- **Git versioned** - tags track releases

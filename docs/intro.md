@@ -7,26 +7,26 @@ slug: /
 
 Welcome to the **unified documentation portal** for all our applications!
 
-## 📚 What's Here?
+## What's Here?
 
 This documentation site covers multiple applications, each with multiple versions:
 
-### 📱 Applications
+### Applications
 
 - **[Yields for Performance](app-a/intro)** - Scalable data science platform for Model Risk Management
 
 
-### 🏷️ Versions
+### Versions
 
 Each application maintains documentation for all supported versions. See the [Version Index](versions.md) for details.
 
-## 🚀 Quick Start
+## Quick Start
 
 Choose your application:
 
 <div style={{display: 'flex', gap: '20px', marginTop: '30px'}}>
   <div style={{flex: 1, padding: '20px', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: '8px'}}>
-    <h3>📱 Yields for Performance</h3>
+    <h3>Yields for Performance</h3>
     <p>Model Risk Management platform</p>
     <ul>
       <li><a href="/docs/app-a/v1.0/user-guide/getting-started">Getting Started</a></li>
@@ -36,34 +36,34 @@ Choose your application:
   
 </div>
 
-## 📖 Documentation Types
+## Documentation Types
 
 Each application has two types of documentation:
 
-### 👥 User Guide
+### User Guide
 **For end users and customers**
 - Getting started guides
 - Feature walkthroughs
 - Tutorials
 - FAQs
 
-### 🛠️ Technical Documentation
+### Technical Documentation
 **For developers and DevOps**
 - Configuration
 - Deployment guides
 - API references
 - Debugging
 
-## 🔍 Browse by Need
+## Browse by Need
 
 **I want to...**
 
-- 🚀 [Get started with an app](#) → See individual app guides
-- 🔧 [Deploy to production](versions.md) → Check version-specific deployment
-- 📚 [Use the API](#) → See API references per app
-- ❓ [Get help](#) → Check FAQs or contact support
+- [Get started with an app](#) - See individual app guides
+- [Deploy to production](versions.md) - Check version-specific deployment
+- [Use the API](#) - See API references per app
+- [Get help](#) - Check FAQs or contact support
 
-## 🏷️ Version Information
+## Version Information
 
 We maintain documentation for all supported versions:
 
@@ -73,11 +73,11 @@ We maintain documentation for all supported versions:
 
 See the [complete version index](versions.md).
 
-## 📞 Need Help?
+## Need Help?
 
-- 📧 **Support**: support@example.com
-- 💬 **Community**: [Discord](https://discord.example.com)
-- 🐛 **Issues**: [GitHub](https://github.com/garganache/docu/issues)
+- **Support**: support@example.com
+- **Community**: [Discord](https://discord.example.com)
+- **Issues**: [GitHub](https://github.com/garganache/docu/issues)
 
 ---
 

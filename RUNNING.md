@@ -17,11 +17,11 @@ npm start
 **Open:** http://localhost:3000
 
 You'll see:
-- 📚 Main landing page
-- 📱 All apps (App A, App B, App C)
-- 🏷️ All versions (v1.0, v2.0, etc.)
-- 👥 User Guide sections
-- 🛠️ Technical sections
+- Main landing page
+- All apps (App A, App B, App C)
+- All versions (v1.0, v2.0, etc.)
+- User Guide sections
+- Technical sections
 
 ### Clone from GitHub
 
@@ -36,13 +36,13 @@ npm start
 
 ```
 docu/                        # ROOT - One Docusaurus site
-├── package.json             ✅ Dependencies
-├── docusaurus.config.js     ✅ Site config
-├── sidebars.js             ✅ Navigation (all apps)
+├── package.json             Dependencies
+├── docusaurus.config.js     Site config
+├── sidebars.js             Navigation (all apps)
 │
-├── docs/                    ✅ All documentation
-│   ├── intro.md            ✅ Main homepage
-│   ├── versions.md         ✅ Version index
+├── docs/                    All documentation
+│   ├── intro.md            Main homepage
+│   ├── versions.md         Version index
 │   │
 │   ├── app-a/              # App A
 │   │   ├── intro.md        #   App A overview
@@ -52,7 +52,7 @@ docu/                        # ROOT - One Docusaurus site
 │   │       └── technical/
 │   
 │
-└── src/css/                ✅ Custom styling
+└── src/css/                Custom styling
     └── custom.css
 ```
 
@@ -148,4 +148,4 @@ tagline: 'Your tagline',
 
 ---
 
-**Ready to run!** Just `cd docs/app-a/v1.0 && npm install && npm start` 🚀
+**Ready to run!** Just `cd docs/app-a/v1.0 && npm install && npm start`

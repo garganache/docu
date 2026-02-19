@@ -21,22 +21,22 @@
 
 For each application, we maintain **two types of documentation**:
 
-#### 👥 User-Facing Documentation
+#### User-Facing Documentation
 **For end users, customers**
-- 🚀 **Getting Started** - First steps, quick start
-- 📖 **User Guide** - How to use features
-- 🎓 **Tutorials** - Step-by-step walkthroughs
-- ❓ **FAQ** - Common questions
-- 💡 **Concepts** - Understanding key ideas
-- 🔧 **Troubleshooting** - User-level problems
+- **Getting Started** - First steps, quick start
+- **User Guide** - How to use features
+- **Tutorials** - Step-by-step walkthroughs
+- **FAQ** - Common questions
+- **Concepts** - Understanding key ideas
+- **Troubleshooting** - User-level problems
 
-#### 🛠️ Technical/Developer Documentation
+#### Technical/Developer Documentation
 **For developers, operators, DevOps**
-- ⚙️ **Configuration** - Settings, environment variables
-- 🚀 **Deployment** - Production deployment
-- 📚 **API Reference** - Endpoints, methods, examples
-- 🐛 **Debugging** - Developer troubleshooting, logs
-- 🔄 **Changelog** - Version history, breaking changes
+- **Configuration** - Settings, environment variables
+- **Deployment** - Production deployment
+- **API Reference** - Endpoints, methods, examples
+- **Debugging** - Developer troubleshooting, logs
+- **Changelog** - Version history, breaking changes
 
 ## Repository Structure
 
@@ -60,7 +60,7 @@ docu/
 │   │   ├── sidebars.js.template
 │   │   └── package.json.template
 │   │
-│   ├── user-facing/             # 👥 User documentation
+│   ├── user-facing/             # User documentation
 │   │   ├── getting-started.md
 │   │   ├── user-guide.md
 │   │   ├── features.md
@@ -69,7 +69,7 @@ docu/
 │   │   ├── concepts.md
 │   │   └── troubleshooting.md
 │   │
-│   └── technical/               # 🛠️ Technical docs
+│   └── technical/               # Technical docs
 │       ├── configuration.md     # Settings
 │       ├── deployment.md        # Production deployment
 │       ├── api-reference.md     # API docs
@@ -82,11 +82,11 @@ docu/
 │   │   ├── v1.0/                # Version 1.0 docs
 │   │   │   ├── docs/            # Docusaurus docs folder
 │   │   │   │   ├── intro.md
-│   │   │   │   ├── user-guide/       # 👥 User docs
+│   │   │   │   ├── user-guide/       # User docs
 │   │   │   │   │   ├── getting-started.md
 │   │   │   │   │   ├── features.md
 │   │   │   │   │   └── ...
-│   │   │   │   └── technical/        # 🛠️ Technical docs
+│   │   │   │   └── technical/        # Technical docs
 │   │   │   │       ├── configuration.md
 │   │   │   │       ├── deployment.md
 │   │   │   │       └── ...
@@ -117,7 +117,7 @@ docu/
     ├── validate-structure.sh    # Check all apps follow structure
     └── generate-index.sh        # Auto-generate main index
 
-📖 **See [VERSIONING.md](VERSIONING.md) for detailed versioning strategy**
+**See [VERSIONING.md](VERSIONING.md) for detailed versioning strategy**
 ```
 
 ## Versioning Strategy

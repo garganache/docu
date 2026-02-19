@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Complete index of all applications and their versions.
 
-## 📱 Yields for Performance
+## Yields for Performance
 
 **Current Version:** v2.13
 **Status:** Stable
